@@ -1,0 +1,607 @@
+/* fonte playfair display*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+/*fonte raleway*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+/* Resete */
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: content-box;
+    font-family: 'playfair display', serif;
+}
+
+body {
+    background-color: white;
+}
+
+/*=======================HEADER==========================*/
+
+#header-line {
+    position: absolute;
+    height: 2.5px;
+    width: 100%;
+    top: 3.5rem;
+    background-color: rgb(177, 66, 158);
+    border: none;
+}
+
+#title{
+    padding-top: 5.5rem;
+    padding-left: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+#title h2 {
+    padding-bottom: 0;
+    font-size: 1.375rem;
+    font-weight: 500;
+    box-shadow: rgb(133, 133, 133);
+}
+#title h4 {
+    padding-top: 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/*=======================MENU NAV==========================*/
+
+nav {
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:  rgb(0, 0, 0);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+
+
+/*=======================HOME-BANNER==========================*/
+
+#home-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 37.5rem;
+    background-image: url(images/HomeBanner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#banner-title {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20rem;
+    padding-bottom: 7rem;
+}
+
+#banner-title h1{
+    font-weight: 300;
+    font-size: 4.375rem;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+#banner-title h4{
+    font-weight: 300;
+    margin:0 ;
+    font-size: 1rem;
+}
+
+
+/*=======================SERVICES==========================*/
+
+
+#services {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    max-width: 1000px;
+    height: 1980px;
+    position: relative;
+    text-align: left;
+
+}
+
+#services-title{
+    text-align: center;
+    font-family: "playfair display" serif;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+}
+
+#services-title h2 {
+    font-size: 2.4375rem;
+    font-weight: 100;
+    padding-bottom: 4rem;
+}
+#services-title h4 {
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: 100;
+}
+
+
+#services img {
+        width: 410px;
+        height: 410px;
+    }
+
+
+    /*Posicionamento texto / imagens */
+
+    #img-1 {
+        float: left;
+     }
+     #img-2 {
+        float: right;
+     }
+     #img-3 {
+        float: left;
+     }
+ 
+ .container-img{
+     width: 100%;
+     height: 500px;
+ }
+
+
+    #unhagel {
+        float: right;
+        padding-top: 6rem;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    #cuticula {
+        float: left;
+        padding-left: 3rem;
+        padding-top: 6rem;
+        padding-bottom: 1rem;
+    }
+
+    #fibra-vidro {
+        float: right;
+        padding-right: 1rem;
+        padding-top: 6rem;
+        padding-bottom: 1rem;
+    }
+
+
+
+    .span-titulo {
+        font-size: 1.375rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .span-preço {
+        font-size: 1.125rem;
+        padding-bottom: 1.5rem;
+    }
+
+
+
+/*=======================GRID DE IMAGENS==========================*/
+
+
+
+.item-grid {
+    display: inline-block;
+    padding: 2px;
+  
+}
+
+
+
+/*=======================SLOGAN==========================*/
+
+.span-slogan {
+
+}
+
+#slogan {
+    font-family: "playfair" serif;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 25rem;
+}
+
+#slogan1 {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 6rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#slogan2 {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 11.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#slogan3 {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 17rem;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: "raleway", serif;
+}
+
+
+
+
+
+
+
+
+/*=========================FALE CONOSCO===============================*/
+
+#faleconosco {
+    display: inline-block;
+    padding-left: 2rem;
+    padding-bottom: 6rem;
+}
+
+.span-fale {
+    padding-top: 2rem;
+}
+
+#span-fale {
+    padding-top: 8rem;
+    font-size: 2.5rem;
+}
+
+#span-endere {
+    font-family: "raleway", serif;
+}
+
+#span-fone {
+    font-family: "raleway", serif;
+}
+
+#span-email {
+    font-family: "raleway", serif;
+}
+
+
+/*=========================FORMULARIO===============================*/
+
+
+#container-form {
+    margin: auto;
+    max-width: 1000px;
+    min-width: 320px;
+    height: 1150px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding-top: 7rem;
+}
+
+#div-formulario {
+    float: right;
+}
+
+form {
+    width: 300px;
+    height: 478px;
+    padding-right: 2rem;
+    padding-top: 2rem;
+   
+    
+}
+
+table label {
+    float: left;
+    font-family: "raleway", serif;
+    font-weight: 550;
+    
+
+}
+
+table input {
+    background-color: white;
+    float: left;
+    font-weight: 550;
+}
+
+textarea{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    max-width: 600px;
+    border-right: none;
+    border-left:none ;
+    border-top: none;
+    border-width: 2px;
+   
+}
+
+
+input[type="submit"] {
+    color: rgb(255, 255, 255);
+    font-family: "playfair display", serif;
+    font-size: 16px;
+    font-style: italic;
+    background-color: black;
+    font-weight: 550;
+    border: solid;
+   
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+input[type="submit"]:hover {
+    font-size: 1.125rem;
+}
+
+
+
+
+
+/*------------------MAPS---------------------------*/
+#container-maps{
+    max-width: 1000px;
+    min-width: 320px;
+    padding-bottom: 10rem;
+    margin: auto;
+}
+
+
+#gmap_canvas{
+    max-width: 1000px;
+    min-width: 320px;
+}
+#mapa {
+    display: inline;
+}
+
+/*=====================FOOTER==============================*/
+
+
+footer{
+    height: 2.1875rem;
+    background-color: black;
+    text-align: center;
+    bottom: 0;
+}
+footer p{
+    padding-top: 9px;
+    font-size: 0.875rem;
+    color: white;
+    font-family: "raleway", serif;
+}
+
+
+
+
+
+
+/*=======================querys==========================*/
+
+
+@media (max-width: 800px) {
+    .item-grid {
+        display: block;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .item-grid img {
+        width: 400px;
+        height: 400px;
+    }
+
+
+    /*==================FORMULARIO===========================*/
+        #container-form {
+            margin: auto;
+            
+        
+        }
+
+        #div-formulario {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            float: none;
+            display: inline-block;
+        }
+
+        #faleconosco {
+            display: block;
+           text-align: center;
+        }
+
+
+
+}
+
+
+
+
+@media (max-width: 650px) {
+
+    
+    /*------------------HEADER---------------*/
+
+    #title h2 {
+        font-size: 2rem;
+        font-weight: 500;
+    
+    }
+    #title h4 {
+        font-size: 1.5rem;
+    }
+
+    /*------------------menu nav---------------*/
+
+    nav {
+        padding-top: 1rem;
+        height: 10rem;
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul li a {
+       
+        font-size: 0.9rem;
+    }
+
+
+      /*------------------BANNER HOME---------------*/
+
+      #banner-title{
+       padding-left: 5rem;
+       padding-bottom: 0;
+    }
+      #banner-title h1{
+        font-size: 3rem;
+    }
+      #banner-title h4{
+        font-size: 1rem;
+    }
+
+      #home-banner {
+        height: 15rem;
+        background-image: url(images/HomeBanner.png);
+    }
+      
+      /*------------------services---------------*/
+
+    #services img {
+        width: 100vw;
+        height: 350px;
+        float: none;
+        
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 2220px;
+    }
+    
+
+    .container-img{
+        width: 100%;
+        height: 520px;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+
+    #unhagel {
+        float: none;
+        padding-left:2rem;
+        padding-top: 1rem;
+    }
+
+    #cuticula {
+        float: none;
+        padding-top: 2rem;
+        padding-left: 0rem;
+    }
+
+    #fibra-vidro {
+        padding-top: 2rem;
+    }
+
+   /*=======================GRID DE IMAGENS============================*/
+
+   .item-grid {
+    display: inline;
+  
+    }
+
+   .item-grid {
+    display: block;
+    text-align: center;
+    
+}
+   .item-grid img {
+    width: 100vw;
+    height: 50vh;
+}
+
+
+
+/*========================FALE CONOSCO=====================================*/
+
+    #faleconosco {
+
+     display: block;
+     text-align: center;
+     padding-left: 0;
+}
+
+
+
+
+/*========================formulario=====================================*/
+
+    form {
+        padding-top: 2rem;
+        padding-right: 2.5rem;
+        
+    
+    }
+
+    textarea{
+        max-width: 340px;
+    }
+    #div-formulario {
+        float: none;
+
+    }
+
+    #faleconosco{
+        padding-bottom: 0;
+   
+    }
+
+
+    
+}
+
+
+
+
+
