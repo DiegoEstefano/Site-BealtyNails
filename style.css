@@ -4,18 +4,48 @@
 /*fonte raleway*/
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+/*Poppins*/
+
 /* Resete */
 
 * {
     margin: 0;
     padding:0;
     box-sizing: content-box;
-    font-family: 'playfair display', serif;
+    font-family: 'poppins', serif;
 }
 
 body {
     background-color: white;
 }
+
+#navegator1{
+    text-align: center;
+   padding-top: 1.5rem;
+   padding-left: 1rem ;
+   padding-bottom: 1.5rem;
+}
+#navegator1 a {
+     text-decoration:underline;
+     color: black;
+     font-size: 1rem;
+     font-weight: bold;
+}
+#navegator2{
+    
+   padding-top: 1.5rem;
+   padding-left: 1rem ;
+   padding-bottom: 1.5rem;
+}
+#navegator2 a {
+     text-decoration:underline;
+     color: black;
+     font-size: 1rem;
+     font-weight: bold;
+}
+
 
 /*=======================HEADER==========================*/
 
@@ -36,19 +66,20 @@ body {
 
 #title h2 {
     padding-bottom: 0;
-    font-size: 1.375rem;
-    font-weight: 500;
-    box-shadow: rgb(133, 133, 133);
+    font-size: 2rem;
+    font-weight: 400;
+    
 }
 #title h4 {
     padding-top: 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 /*=======================MENU NAV==========================*/
 
 nav {
+    padding-left: 1.2rem;
     height: 2rem;
     display: flex;
     flex-direction: row;
@@ -59,6 +90,7 @@ nav {
 nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    
 }
 
 nav ul {
@@ -67,13 +99,15 @@ nav ul {
   flex-direction: row;
   align-items: flex-start;
   padding: 0;
+  
   width: 100%;
 }
 
 nav ul li a {
     display: inline-block;
     padding: 10px;
-    font-size: 0.7rem;
+    font-weight: 500;
+    font-size: 0.8rem;
 }
 
 
@@ -84,7 +118,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     height: 37.5rem;
-    background-image: url(images/HomeBanner.png);
+    background-image: url(images/HomeBanner.png) ;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -97,15 +131,15 @@ nav ul li a {
 }
 
 #banner-title h1{
-    font-weight: 300;
-    font-size: 4.375rem;
+    font-weight: 400;
+    font-size: 5rem;
     margin: 0;
     padding-bottom: 1rem;
 }
 #banner-title h4{
-    font-weight: 300;
+    font-weight: 500;
     margin:0 ;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 
@@ -124,20 +158,20 @@ nav ul li a {
 
 #services-title{
     text-align: center;
-    font-family: "playfair display" serif;
     padding-top: 6rem;
     padding-bottom: 5rem;
 }
 
 #services-title h2 {
     font-size: 2.4375rem;
-    font-weight: 100;
+    font-weight: 400;
+    font-style: italic;
     padding-bottom: 4rem;
 }
 #services-title h4 {
     font-size: 1.125rem;
     font-style: italic;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 
@@ -214,12 +248,9 @@ nav ul li a {
 
 /*=======================SLOGAN==========================*/
 
-.span-slogan {
-
-}
 
 #slogan {
-    font-family: "playfair" serif;
+  
     text-align: center;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -255,7 +286,7 @@ nav ul li a {
     padding-top: 17rem;
     font-size: 1rem;
     font-weight: 300;
-    font-family: "raleway", serif;
+
 }
 
 
@@ -282,16 +313,16 @@ nav ul li a {
     font-size: 2.5rem;
 }
 
-#span-endere {
-    font-family: "raleway", serif;
-}
 
-#span-fone {
-    font-family: "raleway", serif;
-}
-
-#span-email {
-    font-family: "raleway", serif;
+/*só vai aparecer em celulares
+    "Nos envie uma mensagem"
+*/
+.mensagem {
+    padding-top: 13rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+    visibility: hidden;
 }
 
 
@@ -310,52 +341,60 @@ nav ul li a {
 
 #div-formulario {
     float: right;
+    padding-right: 0.5rem;
 }
 
 form {
     width: 300px;
     height: 478px;
-    padding-right: 2rem;
+    padding-right: 1rem;
     padding-top: 2rem;
-   
-    
 }
 
 table label {
     float: left;
-    font-family: "raleway", serif;
+   
     font-weight: 550;
+    font-size: 1rem;
     
 
 }
 
 table input {
     background-color: white;
+    font-size: 0.8rem;
     float: left;
     font-weight: 550;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px;
 }
+
 
 textarea{
     margin-top: 10px;
     font-size: 15px;
     font-weight: 500;
     max-width: 600px;
+    border-radius: 2px;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
     border-right: none;
     border-left:none ;
     border-top: none;
     border-width: 2px;
+    background-color: rgb(240, 240, 243);
    
 }
 
 
 input[type="submit"] {
     color: rgb(255, 255, 255);
-    font-family: "playfair display", serif;
+    cursor: pointer;
     font-size: 16px;
     font-style: italic;
     background-color: black;
     font-weight: 550;
-    border: solid;
+   
    
 }
 
@@ -369,7 +408,6 @@ input, select {
 input[type="submit"]:hover {
     font-size: 1.125rem;
 }
-
 
 
 
@@ -404,7 +442,7 @@ footer p{
     padding-top: 9px;
     font-size: 0.875rem;
     color: white;
-    font-family: "raleway", serif;
+    
 }
 
 
@@ -412,7 +450,24 @@ footer p{
 
 
 
-/*=======================querys==========================*/
+
+
+
+
+
+
+
+
+
+/*=======================QUERYS==========================*/
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 800px) {
@@ -430,9 +485,14 @@ footer p{
     /*==================FORMULARIO===========================*/
         #container-form {
             margin: auto;
-            
-        
         }
+
+        #navegator2{
+            padding-top: 1.5rem;
+            padding-left: 0;
+            padding-bottom: 1.5rem;
+         }
+
 
         #div-formulario {
             position: absolute;
@@ -449,6 +509,11 @@ footer p{
         }
 
 
+        /*SÓ APARECE NOS CELULARES*/
+        .mensagem {
+            visibility: visible;
+        }
+        
 
 }
 
@@ -472,6 +537,7 @@ footer p{
     /*------------------menu nav---------------*/
 
     nav {
+        padding-left: 0;
         padding-top: 1rem;
         height: 10rem;
         flex-direction: column;
@@ -579,8 +645,7 @@ footer p{
 
     form {
         padding-top: 2rem;
-        padding-right: 2.5rem;
-        
+   
     
     }
 
